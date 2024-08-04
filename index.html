@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="mainMenu.css">
+    <link rel="icon" type="image/x-icon" href="favicon_ttt.png">
+    <title>Welcome to Krishna Tic Tac Toe game!</title>
+</head>
+<body>
+    <!-- Game heading -->
+    <div id="name">
+        <h1>Tic Tac Toe</h1>
+        <h4>Created by <br><a href="https://www.linkedin.com/in/krishna-patil-759269249/" target="_blank" title="My LinkedIn profile">Krishna Patil</a></h4>
+    </div>
+
+    <!-- Game menu -->
+    <div id="menu">
+        <h2 class="menuContents"><a href="https://youtu.be/dQw4w9WgXcQ?si=n5-jCnyKCHAgpFRc" target="_blank">Main Menu</a></h2>
+        <a href="ttt.html"><button id="play" class="menuContents" title="Start the game">Play game</button></a>
+        <button id="toggleSoundEffects" class="menuContents" title="Turn sound effects on or off">Turn Sound Effects On</button>
+        <button id="toggleMusic" class="menuContents" title="Turn music on or off">Turn Music On</button>
+        <select name="links" id="links" size="1" onchange="window.location.href=this.value;" title="Social links">
+            <option value="#" selected>Select option</option>
+            <option value="https://github.com/KrishnaPatil-19" title="My GitHub profile">My GitHub</option>
+            <option value="https://krishnapatil-19.github.io/Portfolio-Website/" title="My Portfolio">My Portfolio</option>
+            <option value="mailto:krishnapatilcontact@gmail.com" title="Email me">My E-Mail</option>
+            <option value="https://www.instagram.com/krishnapatil_19/" title="My IG profile">My Instagram</option>
+        </select>
+    </div>
+
+    <!-- Animated bg -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <audio id="clickSound" src="/sounds/btn_click.mp3" preload="auto"></audio>
+    <audio id="backgroundMusic" src="/sounds/MainMenuBGM.mp3" loop preload="auto"></audio>
+
+    <script src="mm.js"></script>
+</body>
+</html>

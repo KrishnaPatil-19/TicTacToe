@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe by KSP</title>
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="light.css" />
+  <link rel="icon" type="image/x-icon" href="calc_favicon.png">
+</head>
+<body>
+  <!-- Theme dropdown to switch between light and dark theme -->
+  <div id="theme">
+    <select id="themeSelector" onchange="changeTheme(this.value)" title="Select a theme">
+      <option value="light.css" title="Select light theme">Light Theme</option>
+      <option value="dark.css" title="Select dark theme">Dark Theme</option>
+    </select>
+  </div>
+
+  <!-- TTT container -->
+  <div class="ttt">
+    <!-- Keypad grid -->
+    <div class="keypad">
+      <button id="1" class="xo" onclick="markTheSpot()"> </button>
+      <button id="2" class="xo" onclick="markTheSpot()"> </button>
+      <button id="3" class="xo" onclick="markTheSpot()"> </button>
+      <button id="4" class="xo" onclick="markTheSpot()"> </button>
+      <button id="5" class="xo" onclick="markTheSpot()"> </button>
+      <button id="6" class="xo" onclick="markTheSpot()"> </button>
+      <button id="7" class="xo" onclick="markTheSpot()"> </button>
+      <button id="8" class="xo" onclick="markTheSpot()"> </button>
+      <button id="9" class="xo" onclick="markTheSpot()"> </button>
+    </div>
+  </div>
+
+  <!-- Modal HTML structure -->
+  <div id="gameModal" class="modal">
+    <div class="modal-content">
+      <p id="modalMessage"></p>
+      <button id="playAgainButton" class="play-again-button" title="Play the game again">Play Again</button>
+    </div>
+  </div>
+
+  <a href="index.html"><button id="toMM" title="Return to main menu">Exit to Main menu</button></a>
+
+  <!-- Animated bg -->
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <!-- Turn indicator -->
+  <a href="noEasterEgg.jpg" target="_blank"><input type="text" id="turnIndicator" value="Player X's Turn" readonly title="Shows whose turn it is"></a>
+
+  <!-- Reset button -->
+  <button id="resetButton" title="Resets the game back">Reset Game</button>
+
+  <audio id="clickSound" src="/sounds/btn_click.mp3" preload="auto"></audio>
+  <audio id="backgroundMusic" src="/sounds/GameBGM.mp3" loop preload="auto"></audio>
+  <audio id="tileClick" src="/sounds/tile_select.mp3" preload="auto"></audio>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

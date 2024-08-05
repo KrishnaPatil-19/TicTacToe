@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
 #menu {
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', cursive, sans-serif;
     width: 320px; /* Set a fixed width for the container */
     margin: 0 auto;
     padding: 20px;
@@ -19,8 +22,12 @@
 }
 
 .menuContents {
-    font-family: 'Comic Sans MS', cursive; /* Set a game-like font */
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', cursive, sans-serif;
     margin: 10px 0; /* Adjust the spacing between elements */
+}
+
+.menuContents, #menu button, #name h1, #name h4 {
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', cursive, sans-serif;
 }
 
 #menu button {
@@ -42,7 +49,7 @@
 }
 
 #name {
-    font-family: 'Comic Sans MS';
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', cursive, sans-serif;
 }
 
 #name h1 {
@@ -244,7 +251,7 @@ body{
 }
 
 #links {
-    font-family: 'Comic Sans MS';
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', cursive, sans-serif;
     padding: 10px;
     font-size: 14px;
     background-color: #ffffff; /* White background for the dropdown */
@@ -269,3 +276,4 @@ body{
     text-decoration: none;
     color: black;
   }
+  

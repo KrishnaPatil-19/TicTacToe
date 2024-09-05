@@ -36,7 +36,7 @@ To get started with the Tic Tac Toe game, follow these steps:
     cd TicTacToe
 
 3. **Open the Game:**
-    - Open `index.html` in your preferred web browser.
+    - Open [`index.html`](index.html) in your preferred web browser.
 
 ## Usage
 

@@ -41,7 +41,7 @@ To get started with the Tic Tac Toe game, follow these steps:
 ## Usage
 
 ### Playing the Game
-- Click on nthe grid cells to  place your mark ('X' or 'O').
+- Click on the grid cells to  place your mark ('X' or 'O').
 - The game will automatically switch turns between players.
 - Win or draw messages will be displayed in a modal when the game ends.
 - Use the "Play Again" button to start a new game or use the "Reset" button to clear the board or use the "Return to Main Menu" button to return to the main menu.

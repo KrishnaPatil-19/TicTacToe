@@ -89,4 +89,4 @@ If you have any questions or feedback, feel free to open an issue or contact me 
 
 Enjoy playing Tic Tac Toe!
 
-<sub>TicTacToe `README.md` Version 1.0</sub>
+<sub>TicTacToe [`README.md`](README.md) Version 1.0</sub>
